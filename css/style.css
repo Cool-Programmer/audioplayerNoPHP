@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+body{
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 1.5em;
+	color: #fff;
+	background: rgb(96,108,136);
+background: -moz-linear-gradient(left,  rgba(96,108,136,1) 0%, rgba(63,76,107,1) 100%);
+background: -webkit-linear-gradient(left,  rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%);
+background: linear-gradient(to right,  rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=1 );
+}
+
+.clearfix{
+	clear: both;
+}
+
+#container{
+	width: 330px;
+	min-height: 400px;
+	background: #333;
+	overflow: auto;
+	margin: 20px auto;
+	border-radius: 7px;
+	box-shadow: 0 10px 8px -8px #333;
+}
+
+#audioImage{
+	position: relative;
+	overflow: hidden;
+	height: 200px;
+	margin-bottom:15px;
+}
+
+.cover{
+	width: 100%;
+}
+
+#audioInfo{
+	text-align: center;
+}
+
+.artist{
+	font-weight: bold;
+}
+
+#volume{
+	width: 95%;
+	margin-left: 2%;
+	-webkit-appearance:none !important;
+	-moz-appearance:none !important;
+	background: #ccc;
+	height: 1px;
+	margin-bottom: 7px;
+}
+
+#volume::-webkit-slider-thumb{
+	-webkit-appearance:none !important;
+	background: url(../images/knob.png) no-repeat;
+	height: 12px;
+	width: 12px;
+}
+
+#volume::-moz-range-thumb{
+	-moz-appearance:none !important;
+	background: url(../images/knob.png) no-repeat;
+	height: 12px;
+	width: 12px;
+}
+/*if interested, do a research about this for o & ms - to Mherion from the future :D */
+#buttons{
+	width: 90%;
+	display: block;
+	margin: 15px auto;
+	margin-left: 23px;	
+	overflow: auto;
+}
+
+#play{
+	width: 70px;
+	height: 70px;
+	background: url(../images/play.png)no-repeat;
+	float: left;
+	margin-left: -2px;
+}
+
+#pause{
+	width: 70px;
+	height: 70px;
+	background: url(../images/pause.png)no-repeat;
+	float: left;
+	margin-left: -2px;
+/*	display: none;*/
+}
+
+#stop{
+	width: 70px;
+	height: 70px;
+	background: url(../images/stop.png)no-repeat;
+	float: left;
+	margin-left: 3px;
+}
+
+#prev{
+	width: 70px;
+	height: 70px;
+	background: url(../images/prev.png)no-repeat;
+	float: left;
+	margin-top: 18px;
+	margin-left: -2px;
+}
+
+#next{
+	width: 70px;
+	height: 70px;
+	background: url(../images/next.png)no-repeat;
+	float: right;
+	margin-left: -2px;
+	margin-top: 18px;
+}
+
+#tracker{
+	position: relative;
+	width: 100%;
+}
+
+#progressBar{
+	width: 80%;
+	height: 10px;
+	margin-left: 4%;
+	margin-bottom: 20px;
+	/*margin-top: 9px;*/
+	background: url(../images/progress_bg.png)no-repeat;
+	float: left;
+}
+
+#progress{
+	background: url(../images/progress.png)no-repeat;
+	height: 10px;
+	position: absolute;
+	top:0;
+	display: inline-block;
+}
+
+#duration{
+	position: absolute;
+	top: -11px;
+	right: 10px;
+	padding: 4px 8px;
+	background: #000;
+	border-radius: 5px;
+}
+
+#playlist{
+	list-style: none;
+}
+
+#playlist li{
+	cursor: pointer;
+	margin: 1px 5px 5px 10px;
+}
+
+#playlist li.active{
+	font-weight: bold;
+	padding: 3px;
+	background: #666;
+}
+
